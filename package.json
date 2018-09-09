@@ -1,0 +1,14 @@
+{
+  "name": "notwest",
+  "version": "1.0.0",
+  "description": "Week 3 Bank Account assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jonny Edge",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
