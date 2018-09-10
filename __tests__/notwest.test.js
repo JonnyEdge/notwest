@@ -12,6 +12,10 @@ const {
     viewWithdrawals
   } = require('../src/notwest');
 
+  beforeEach(() => {
+    currentAccount[0].balance = 100
+  })
+
 describe('deposit', () => {
     it('adds amount passed into the function to the balance property within the currentAccount object', () => {
       deposit(100)
@@ -22,7 +26,7 @@ describe('deposit', () => {
 describe('withdraw', () => {
   it('removes amount passed into the function from the balance property within the currentAccount object', () => {
     withdraw(100)
-    expect(currentAccount[0].balance).toEqual(100)
+    expect(currentAccount[0].balance).toEqual(0)
   })
 })
 
